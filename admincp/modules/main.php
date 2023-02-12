@@ -8,18 +8,18 @@
         }
         if($tam == 'quanlydanhmucsp'){
             include("./modules/quanlysp/them.php");
+        }elseif($tam == 'quanlysp'){
+            include("./pages/main/danhmuc.php");
+        }elseif($tam == 'quanlynv'){
+            include("./pages/main/giohang.php");
+        }elseif($tam == 'quanlyhoadon'){
+            include("./pages/main/danhmuc.php");
+        }elseif($tam == 'quanlytintuc'){
+            include("./pages/main/donhang.php");
         }else{
             include("./modules/dashboard.php");
         }
-        // if($tam == 'quanlysp'){
-        //     include("./pages/main/danhmuc.php");
-        // }elseif($tam == 'quanlynv'){
-        //     include("./pages/main/giohang.php");
-        // }elseif($tam == 'quanlyhoadon'){
-        //     include("./pages/main/danhmuc.php");
-        // }elseif($tam == 'quanlytintuc'){
-        //     include("./pages/main/donhang.php");
-        // }
+        
         
     ?>
 </div>
