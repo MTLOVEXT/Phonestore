@@ -1,0 +1,26 @@
+.admin-list ul{
+    list-style: none;
+    text-decoration: none;
+}
+.admin-list a {
+    text-decoration: none;
+    color: rgb(0, 21, 252);
+}
+.admin-list ul li {
+    float: left;
+    margin: 2em;
+}
+.clear {
+    clear: both;
+}
+.title-admin {
+    text-align: center;
+    font-size: 3em;
+    color: rgb(4, 82, 252);
+}
+.wrapper {
+    border: 1px solid #000;
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
+}

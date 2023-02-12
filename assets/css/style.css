@@ -1,0 +1,642 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+từ ngoài vào trong
+từ trên xuống dưới
+từ tổng quan đến chi tiết
+1.vị trí 
+2.kích thước
+3.màu sắc
+4.kiểu dáng
+*/
+#main {}
+
+#Header {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    width: 100%;
+    height: 46px;
+    background-color: orangered;
+    z-index: 3;
+}
+
+/* logo */
+
+#Header .logo {
+    float: left;
+}
+
+#Header .logo .logo-img {
+    width: 40px;
+    height: 40px;
+    line-height: 46px;
+    margin: 0 10px;
+}
+
+#Header .logo .logo-img:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+/* MenuNgang */
+
+#nav {
+    display: inline-block;
+    width: 90%;
+}
+
+#nav .icon {
+    display: none;
+}
+
+#nav,
+.subnav,
+.subnav-child {
+    list-style: none;
+}
+
+#nav>li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav>li>a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+
+@media only screen and (max-width: 800px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .div-content .content1 {
+        display: none;
+    }
+
+    #Header #nav li {
+        display: block;
+    }
+
+    #content .content-section .section-heading .div-content-product ul li {
+        display: block;
+    }
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 3;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+    height: auto;
+}
+
+.container label {
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.container button {
+    font-size: 2em;
+    border: 2px solid;
+    cursor: pointer;
+}
+
+.container button:hover {
+    background-color: green;
+    border-radius: 30%;
+    transition: all 1s ease-in 0s;
+}
+
+.container input {
+    width: 100%;
+    clear: both;
+    font-size: 2em;
+}
+
+.container input:focus {
+    outline: none;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+    border-color: #03a9f4;
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 600px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+/* end */
+
+/* Menungangcon */
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav>li:hover>a,
+#nav .subnav li:hover,
+#nav .subnav .subnav-child li:hover {
+    color: black;
+    background-color: rgb(255, 0, 0);
+}
+
+#nav .subnav {
+    min-width: 150px;
+    display: none;
+    position: absolute;
+    background-color: rgb(204, 181, 172);
+    width: 200px;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+#nav .subnav a {
+    padding: 0 12px;
+    line-height: 38px;
+    color: black;
+}
+
+/* Menungangnhonhat */
+@media ( max-width: 800px ){
+    #Header .logo {
+        display: none;
+    }
+    #Header #nav {
+        display: inline;
+    }
+    #Header .search-btn {
+        display: none;
+    }
+    .nav-menu {
+        display: block;
+    }
+    #nav {
+        position: absolute;
+        top: 50px;
+        right: -100%;
+        width: 100%;
+        height: calc(100vh - 50px);
+        background-color: #333;
+        transition: right 0.5s;
+    }
+    #nav .active {
+        right: 0;
+    }
+    #nav ul {
+        display: block;
+        text-align: center;
+    }
+    #nav ul li a {
+        border-bottom: 2px dotted rgba(58,177,193,0.5);
+    }
+}
+
+.nav-menu {
+    color: #fff;
+    float: left;
+    line-height: 2em;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+#nav .subnav .subnav-child {
+    min-width: 150px;
+    display: none;
+    position: absolute;
+    background-color: rgb(153, 153, 153);
+    width: 200px;
+    top: 0;
+    left: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+#nav .subnav li:hover .subnav-child {
+    display: block;
+}
+
+#nav .subnav .subnav-child a {
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+#slidebar {
+    margin-top: 10px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#nav .nav-arrow-down {
+    font-size: 14px;
+}
+
+#Header .search-btn {
+    float: right;
+    cursor: pointer;
+}
+
+#Header .search-btn #search-txt {
+    display: none;
+    margin: 10px 15px;
+}
+
+#Header .search-btn:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+#Header .search-icon {
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+    padding: 0 21px;
+}
+
+#slider {
+    position: relative;
+    margin-top: 0px;
+}
+
+#slider a img {
+    width: 100%;
+    height: 500px;
+}
+
+#slider .text-content {
+    position: absolute;
+    bottom: 47px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.marquee {
+    width: 100%;
+    height: auto;
+}
+
+.marquee a {
+    font-size: 25px;
+    height: auto;
+    padding: 10px 5px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.marquee a img {
+    width: auto;
+    height: auto;
+}
+
+#content .section-heading .content-product-ul>li:hover a {
+    background-color: rgb(255, 0, 0);
+    color: #fff;
+}
+
+#content {
+    margin-top: 55px;
+    background-color: rgb(114, 105, 101);
+}
+
+/* contentProduct */
+
+#content .content-section {
+    display: inline;
+}
+
+#content .content-section {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+#content .content-section .section-heading {
+    width: 100%;
+}
+
+#content .content-section .section-heading .div-content-logo {
+    width: 83%;
+}
+
+#content .content-section .section-heading .div-content-product {
+    width: 100%;
+}
+
+#content .content-section .section-heading .content-img-logo {
+    width: 100px;
+    height: 50px;
+    float: left;
+    cursor: pointer;
+}
+
+#content .content-section .section-heading #product-selection {
+    background-color: rgb(255, 68, 0);
+}
+
+#content .content-section .section-heading #product-selection:hover {
+    color: #fff;
+}
+
+#content .content-section .section-heading .content-product-ul {
+    text-decoration: none;
+    list-style: none;
+    width: 100%;
+    height: 50px;
+    transition: 2s ease-out;
+    width: 90%;
+}
+
+#content .content-section .section-heading .content-product-ul>li {
+    display: inline-block;
+}
+
+#content .content-section .section-heading .content-product-ul>li>a {
+    color: #000;
+    line-height: 47px;
+    padding: 10px 15px;
+    text-decoration: none;
+    /* display: block; */
+    text-transform: uppercase;
+}
+
+#content .content-section .section-heading .section-product {}
+
+.div-content {
+    margin: 0 0;
+    width: 100%;
+    display: flex;
+    background-color: rgb(123, 121, 121);
+}
+
+.div-content .content1 {
+    float: 20%;
+    margin: 5px 25px;
+    width: 20%;
+    height: auto;
+    align-self: flex-start;
+    background-color: rgb(114, 105, 101);
+    /* flex-grow: 0; */
+}
+
+.div-content .content1 li:hover {
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+
+.div-content .content1 li {
+    margin: 10px 10px;
+    padding: 10px 10px;
+    list-style-type: none;
+    border: none;
+    transition: 2s ease-in-out;
+    width: 90%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.999);
+}
+
+.div-content .content1 li a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+}
+
+/* productcontent */
+
+.div-content .content2 {
+    margin: 5px 0;
+    border: 1px solid rgb(217, 4, 4);
+    justify-content: space-between;
+    width: 80%;
+}
+
+.content2 div {
+    width: 25%;
+    height: 200px;
+    border: solid 3px black;
+}
+
+.div-content .content2 .products {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 5px 5px;
+    justify-content: space-evenly;
+    /* align-self: flex-start; */
+    /* display: inherit; */
+    background-color: rgb(146, 146, 146);
+    /* display: none; */
+}
+
+.products div {
+    overflow: hidden;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.products div p {
+    display: contents;
+}
+
+.products div img {
+    width: 40%;
+    height: 75%;
+}
+
+.div-content .content2 .products .productDescription {
+    display: none;
+}
+
+.div-content .content2 .products .product {
+    margin: 10px 5px;
+    background-color: rgb(132, 132, 132);
+    padding: 10px 10px;
+}
+
+.title_product {
+    text-align: center;
+    color: blue;
+    font-weight: bold;
+}
+
+.price_product {
+    text-align: center;
+    color: rgb(255, 0, 34);
+    font-weight: bold;
+}
+
+/* animationButton */
+
+.div-content .content2 .products .btn-product {
+    height: 50px;
+    display: block;
+    margin: 5px 10px;
+    border-radius: 50%;
+    position: relative;
+    border: none;
+    transition: 2s ease-in;
+    z-index: 2;
+    cursor: pointer;
+    width: 90%;
+}
+
+.div-content .content2 .products .product .btn-product::before,
+.div-content .content2 .products .btn-product::after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+}
+
+.div-content .content2 .products .btn-product::after {
+    height: 100%;
+    left: -35%;
+    top: 0;
+    transform: skew(50deg);
+    transition-duration: 0.6s;
+    transform-origin: top left;
+    width: 0;
+}
+
+.div-content .content2 .products .btn-product:hover {
+    background-color: orangered;
+    box-shadow: 0 9px #999;
+}
+
+.div-content .content3 {}
+
+/* endAnimationbutton */
+
+#footer {
+    width: 100%;
+    height: 100px;
+    background-color: orangered;
+    clear: both;
+}
+
+#footer .footer-btn {
+    font-size: 20px;
+    display: inline;
+    line-height: 100px;
+    padding: 40px 10px;
+    cursor: pointer;
+}
+
+#footer .footer-btn>a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#footer .footer-btn:hover {
+    background-color: rgb(255, 0, 0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.999);
+}
+
+#footer .btn-backToHeading {
+    text-decoration: none;
+    cursor: pointer;
+    padding: 40px 0px;
+}
