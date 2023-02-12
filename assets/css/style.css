@@ -30,6 +30,35 @@ từ tổng quan đến chi tiết
     z-index: 3;
 }
 
+.lb-message {
+    color: rgb(252, 5, 240);
+    float: left;
+    font-size: 1.5em;
+}
+
+.username-message {
+    float: left;
+    font-size: 1.5em;
+}
+
+.message-customer {
+    font-size: 1.5em;
+    width: 100%;
+    height: 10em;
+}
+
+.btn-message {
+    padding: 1em;
+    border-radius: 30%;
+    cursor: pointer;
+}
+
+.btn-message:hover {
+    background-color: rgb(255, 7, 255);
+    border-radius: 50%;
+    transition: all 1s ease-in 0s;
+}
+
 /* logo */
 
 #Header .logo {

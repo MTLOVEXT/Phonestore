@@ -3,7 +3,7 @@
         <a href="index.php"><img class="logo-img" src="./assets/img/logo-no-background.png" alt="Logo"></a>
     </div>            
     <nav id="nav">
-        <li><a href="#" class="active"><i class="ti-info"></i> Thông tin liên hệ</a></li>
+        <li><a href="index.php?quanly=thongtin" class="active"><i class="ti-info"></i> Thông tin liên hệ</a></li>
         <li>
             <a href="index.php?quanly=danhmucsanpham&id=1">
                 <i class="ti-menu-alt"></i>

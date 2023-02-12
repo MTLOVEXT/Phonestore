@@ -16,6 +16,10 @@
                 }
                 if($tam == 'danhmucsanpham'){
                     include("./pages/main/danhmuc.php");
+                }elseif($tam == 'Laptop'){
+                    include("./pages/main/theloai.php");
+                }elseif($tam == 'thongtin'){
+                    include("./pages/main/thongtin.php");
                 }elseif($tam == 'giohang'){
                     include("./pages/main/giohang.php");
                 }elseif($tam == 'danhmuc'){

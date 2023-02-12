@@ -1,4 +1,4 @@
-<?php
+<?php++
     include('../../config/connect.php');
     $tenloaisp = $_POST['tendanhmuc'];
     $thutu = $_POST['thutu'];

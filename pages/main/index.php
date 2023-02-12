@@ -2,6 +2,17 @@
 <div class="products">
 
     <div >
+        <img src="./assets/img/IP/ip_11.jpg" alt="ip_11">
+        <p class="title_product" >Iphone 11 <br> </p> 
+            <p class="price_product" >  Giá bán: 30.000.000 VNĐ</p>
+        <button class="btn-product" >Thêm vào giỏ hàng</button>
+    </div>
+    <!-- <div class="productDescription">
+        Tên máy: Iphone 11 <br>
+        Nhà sản xuất: Mỹ
+    </div>  -->
+
+    <div >
         <img src="./assets/img/SS/ss_a12.jpg" alt="ss_a12">
         <p class="title_product" >SamSung a12 <br> </p> 
             <p class="price_product" >  Giá bán: 4.000.000 VNĐ</p>

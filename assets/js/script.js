@@ -1,5 +1,5 @@
-document.getElementsByClassName(nav-menu).onclick = function (e) {
-  document.getElementById(nav).classList.toggle("active");
+function submit() {
+  alert("Nhận xét đã được ghi lại");
 }
 // function myFunction() {
 //     var x = document.getElementById("myTopnav");
