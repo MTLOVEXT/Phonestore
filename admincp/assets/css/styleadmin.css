@@ -1,6 +1,9 @@
 .admin-list ul{
     list-style: none;
     text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .admin-list a {
     text-decoration: none;

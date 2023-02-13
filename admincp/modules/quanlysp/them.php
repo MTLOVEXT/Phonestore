@@ -1,6 +1,6 @@
 <h1>Thêm danh mục</h1>
 <table border= "1"; style="width: 100%; border-collapse: collapse;">
-    <form method="POST" action="modules/quanlysp/xuly.php"> <!--/*lỗi*/ -->
+    <form method="POST" action="modules/quanlysp/xuly.php">
         <tr>
             <td>Tên danh mục</td>
             <td><input style="width:99%;" type="text" name="tendanhmuc"></td>

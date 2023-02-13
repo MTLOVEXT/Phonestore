@@ -12,6 +12,7 @@
     <p class="title-admin">Admin page</p>
     <div class="wrapper">
         <?php
+            include("./config/connect.php");
             include("./modules/header.php");
             include("./modules/menu.php");
             include("./modules/main.php");
