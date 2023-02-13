@@ -1,7 +1,7 @@
 
 <div class="admin-list">
     <ul>
-        <ul><a href="index.php">Admin Page</a></ul>
+        <li><a href="index.php">Admin Page</a></li>
         <li><a href="index.php?action=quanlydanhmucsp&query=them">Danh mục sản phẩm</a></li>
         <li><a href="index.php?action=quanlysp&query=them">Quản lý sản phẩm</a></li>
         <li><a href="index.php?action=quanlynv&query=them">Quản lý nhân viên</a></li>
