@@ -1,3 +1,6 @@
+<?php 
+    include("fsignup.php");
+?>
 <div id="id01" class="modal">
     <form class="modal-content animate" method="post">
         <div class="imgcontainer">
@@ -13,7 +16,7 @@
                 <label for="psw"><b>Password</b></label>
                 <input id= "passdn" type="password" placeholder="Enter Password" name="psw" required>
                 
-                <button type="button" onclick="login()">Login</button>
+                <button type="button" onclick="">Login</button>
                 <p style="font-size: 2em;" id="result">Welcome Login...</p>
                 <button type="button" onclick="signupform()">Chưa có tài khoản</button>
                 <input type="checkbox" unchecked="checked" name="remember"> Remember me

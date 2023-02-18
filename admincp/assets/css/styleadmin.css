@@ -1,3 +1,7 @@
+
+body {
+    background-color: #AD5E72;
+}
 .admin-list ul{
     list-style: none;
     text-decoration: none;
@@ -23,7 +27,8 @@
 .title-admin {
     text-align: center;
     font-size: 3em;
-    color: rgb(4, 82, 252);
+    color: #049fff;
+    background-color: lightcoral;
 }
 .wrapper {
     border: 1px solid #000;

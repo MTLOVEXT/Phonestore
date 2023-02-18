@@ -1,7 +1,11 @@
 <div class="content1">
     <ul>
-        <li><a href="" onclick="xulyclick(this.id)">Điện thoại</a></li>
-        <li><a href="">Máy tính bảng</a></li>
-        <li><a href="">Laptop</a></li>
+        <?php
+            $sql_danhmuc = "SELECT * FROM tbl_danhmuc ORDER BY id_danhmuc DESC";
+            $query_danhmuc = mysqli_query($mysqli,$sql_danhmuc);
+            while($row = mysqli_fetch_array($query_danhmuc)) {
+        ?>
+        <li><a id="product-selection" href="index.php?quanly=danhmucsanpham&id=<?php echo $row['id_danhmuc']?>"><?php echo $row['tendanhmuc']?></a></li>
+        <?php } ?>
     </ul>
 </div>

@@ -13,6 +13,7 @@
 <body>
     <center>
     <?php
+        include("./admincp/config/connect.php");
         include("./pages/header.php");
         include("./pages/content/content.php");
         include("./pages/main.php");

@@ -6,10 +6,13 @@
             </div>
             <div class="div-content-product">
                 <ul class="content-product-ul">
-                    <li><a id="product-selection" href="">Điện thoại nổi bật</a></li>
-                    <li><a href="">SamSung</a></li>
-                    <li><a href="">Iphone</a></li>
-                    <li><a href="">Xiaomi</a></li>
+                    <?php
+                        $sql_danhmuc = "SELECT * FROM tbl_danhmuc ORDER BY id_danhmuc DESC";
+                        $query_danhmuc = mysqli_query($mysqli,$sql_danhmuc);
+                        while($row = mysqli_fetch_array($query_danhmuc)) {
+                    ?>
+                    <li><a id="product-selection" href="index.php?quanly=danhmucsanpham&id=<?php echo $row['id_danhmuc']?>"><?php echo $row['tendanhmuc']?></a></li>
+                    <?php } ?>
                 </ul>
             </div>
         </div>

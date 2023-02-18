@@ -16,8 +16,8 @@
                 }
                 if($tam == 'danhmucsanpham'){
                     include("./pages/main/danhmuc.php");
-                }elseif($tam == 'Laptop'){
-                    include("./pages/main/theloai.php");
+                }elseif($tam == 'sanpham'){
+                    include("./pages/main/sanpham.php");
                 }elseif($tam == 'thongtin'){
                     include("./pages/main/thongtin.php");
                 }elseif($tam == 'giohang'){
@@ -35,12 +35,4 @@
         </div>
 
     </div>
-
-    <marquee class="marquee" behavior="scroll" bgcolor="pink">  
-        <div class="marquee_div">
-            <a href=""><img src="./assets/img/slider/Fold3-3699-rightbanner.png" alt=""></a>
-            <a href=""><img src="./assets/img/slider/rightbanner-des-ipapro11.png" alt=""></a>
-            <a href=""><img src="./assets/img/slider/poco-m5-series-sliding.png" alt=""></a>
-        </div> 
-    </marquee>
 </div>

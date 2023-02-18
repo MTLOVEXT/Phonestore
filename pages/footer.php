@@ -1,3 +1,10 @@
+<marquee class="marquee" behavior="scroll" bgcolor="pink">  
+    <div class="marquee_div">
+        <a href=""><img src="./assets/img/slider/Fold3-3699-rightbanner.png" alt=""></a>
+        <a href=""><img src="./assets/img/slider/rightbanner-des-ipapro11.png" alt=""></a>
+        <a href=""><img src="./assets/img/slider/poco-m5-series-sliding.png" alt=""></a>
+    </div> 
+</marquee>
 <div id="footer">
     <div class="footer-btn">
         <a href="https://www.facebook.com/"><i class="ti-facebook"></i></a> 

@@ -1,42 +1,32 @@
+<?php
+    $sql_danhmucsp = "SELECT * FROM tbl_danhmuc ORDER BY id_danhmuc DESC";
+    $query_danhmucsp = mysqli_query($mysqli,$sql_danhmucsp);
+?>
 <div id="Header">
     <div class="logo">
         <a href="index.php"><img class="logo-img" src="./assets/img/logo-no-background.png" alt="Logo"></a>
     </div>            
     <nav id="nav">
         <li><a href="index.php?quanly=thongtin" class="active"><i class="ti-info"></i> Thông tin liên hệ</a></li>
-        <li>
-            <a href="index.php?quanly=danhmucsanpham&id=1">
+        <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="index.php?quanly=danhmucsanpham&id=1" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
                 <i class="ti-menu-alt"></i>
                 Danh mục
                 <i class="nav-arrow-down ti-angle-down"></i>
             </a>
-                <ul class="subnav">
-                    <li>
-                        <a href="index.php?quanly=dienthoai">Điện thoại</a>
-                        <ul class="subnav-child">
-                            <li><a href="index.php?quanly=dienthoai&id=1">SamSung</a></li>
-                            <li><a href="index.php?quanly=dienthoai&id=2">Iphone</a></li>
-                            <li><a href="index.php?quanly=dienthoai&id=3">Xiaomi</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="index.php?quanly=maytinhbang">Máy tính bảng</a>
-                        <ul class="subnav-child">
-                            <li><a href="index.php?quanly=maytinhbang&id=1">SamSung</a></li>
-                            <li><a href="index.php?quanly=maytinhbang&id=2">Iphone</a></li>
-                            <li><a href="index.php?quanly=maytinhbang&id=3">Xiaomi</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="index.php?quanly=Laptop">Laptop</a>
-                        <ul class="subnav-child">
-                            <li><a href="index.php?quanly=Laptop&id=1">SamSung</a></li>
-                            <li><a href="index.php?quanly=Laptop&id=2">Apple</a></li>
-                            <li><a href="index.php?quanly=Laptop&id=3">Asus</a></li>
-                        </ul>
-                    </li>
-                </ul>
-        </li>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                <a class="dropdown-item" href="index.php?quanly=danhmucsanpham&id=</a>
+                
+            </div>
+        </li> -->
+        <?php 
+            while($row_danhmuc = mysqli_fetch_array($query_danhmucsp)){
+        ?>
+        <li><a href="index.php?quanly=danhmucsanpham&id=<?php echo $row_danhmuc['id_danhmuc']?>"><?php echo $row_danhmuc['tendanhmuc'] ?></a></li>
+        <?php
+            } 
+        ?>
         <li><a href="index.php?quanly=donhang"><i class="ti-clipboard"></i> Tra cứu đơn hàng</a></li>
         <li><a href="index.php?quanly=giohang"><i class="ti-shopping-cart"></i> Giỏ hàng</a></li>
         <li><a href="index.php?quanly=hotro"><i class="ti-comment-alt"></i> Hỗ trợ</a></li>
