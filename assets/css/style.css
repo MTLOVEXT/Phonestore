@@ -685,6 +685,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     align-content: stretch;
+    flex-direction: column;
 }
 
 
@@ -695,13 +696,13 @@ a {
 }
 
 .products div img {
-    height: 150px;
-    width: 150px;
+    height: 25em;
+    width: 25em;
 }
 
 .products a img {
-    height: 150px;
-    width: 150px;
+    height: 25em;
+    width: 25em;
 }
 
 .title_product {
@@ -725,11 +726,11 @@ a {
 
 .hinhanh_sanpham {
     float: left;
-    width: 25%;
+    width: 40%;
 }
 
 .chitiet_sanpham {
-    padding-top: em;
+    padding-top: 10em;
     float: left;
     width: 50%;
     margin: 0 10px;
@@ -821,8 +822,6 @@ ul#tabs-nav li.active {
     background-color: orangered;
     box-shadow: 0 9px #999;
 }
-
-.div-content .content3 {}
 
 /* endAnimationbutton */
 
