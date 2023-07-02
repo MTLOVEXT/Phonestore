@@ -10,22 +10,31 @@
 	</div>
 	<form method="POST" action="pages/main/themgiohang.php?idsanpham=<?php echo $row_chitiet['id_sanpham'] ?>">
 		<div class="chitiet_sanpham">
-			<h3 style="margin:0;font-size:2em;">Tên sản phẩm : <?php echo $row_chitiet['tensanpham'] ?></h3>
-			<p>Mã sp: <?php echo $row_chitiet['masp'] ?></p>
+			<h3 style="">Tên sản phẩm : <?php echo $row_chitiet['tensanpham'] ?></h3>
 			<p>Giá sp: <?php echo number_format($row_chitiet['giasp'],0,',','.').'vnđ' ?></p>
-			<p>Số lượng sp: <?php echo $row_chitiet['soluong'] ?></p>
 			<p>Danh mục sp: <?php echo $row_chitiet['tendanhmuc'] ?></p>
+
+            <?php 
+                if(isset($_SESSION['dangky'])){ 
+            ?>
+
 			<p><input class="themgiohang" name="themgiohang" type="submit" value="Thêm giỏ hàng"></p>
 			
+            <?php 
+                }else {
+                    echo '<p style = "font-size: 3em;color: red;">Vui lòng đăng nhập để mua hàng</p>';
+                }
+            ?>
+
 		</div>
 	</form>
 </div>
 <div class="clear"></div>
 <div class="tabs">
     <ul id="tabs-nav">
-        <li><a href="#tab1" onclick="tab1()">Thông số kỹ thuật</a></li>
-        <li><a href="#tab2"onclick="tab2()">Nội dung chi tiết</a></li>
-        <li><a href="#tab3"onclick="tab3()">Hình ảnh sản phẩm</a></li>
+        <li><a href="#tabs-nav" onclick="tab1()">Thông số kỹ thuật</a></li>
+        <li><a href="#tabs-nav"onclick="tab2()">Nội dung chi tiết</a></li>
+        <li><a href="#tabs-nav"onclick="tab3()">Hình ảnh sản phẩm</a></li>
         
     </ul> <!-- END tabs-nav -->
     <div id="tabs-content">

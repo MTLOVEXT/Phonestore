@@ -8,4 +8,4 @@
 		<option value="365ngay">365 ngày qua</option>
 	</select>
 </p>
-<div id="chart" style="height: 250px;"></div>
+<div id="Chart" style="height: 250px;"></div>

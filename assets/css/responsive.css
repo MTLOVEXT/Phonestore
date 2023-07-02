@@ -1,0 +1,180 @@
+@media (max-width: 768px) {
+    .navbar-brand {
+        display: none;
+    }
+
+    #nav-bar {
+        padding: 0;
+    }
+
+    #content {
+        margin-top: 46px;
+    }
+
+    .div-content-logo {
+        position: relative;
+    }
+
+    .content-img-logo {
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .d-flex {
+        width: 100%;
+    }
+
+    .nav-item:first-child {
+        display: block;
+    }
+
+    ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
+        width: 100%;
+    }
+
+    a.nav-link {
+        padding: 1em;
+    }
+
+    ul.dropdown-menu.show {
+        background-color: rgb(218, 165, 148);
+        width: 100%;
+    }
+
+    .div-content .content2 {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .products {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .products-info {
+        width: 100%;
+    }
+
+    .title_product {
+        font-size: 2em;
+    }
+
+    .price_product {
+        font-size: 2em;
+    }
+
+    .order-modal-top {
+        gap: 0;
+        flex-direction: column;
+    }
+
+    .step {
+        padding: 5px;
+    }
+
+    .step:hover {
+        border-radius: 20px;
+    }
+    
+    .order-modal-top-step {
+        margin: 5px;
+    }
+
+    .btn-modal-cart {
+        margin-right: 0;
+    }
+
+    .cart-button {
+        align-items: baseline;
+    }
+
+    .chitiet_sanpham {
+        height: auto;
+        padding: 0;
+    }
+
+    .wrapper_chitiet {
+        width: 100%;
+    }
+
+    .hinhanh_sanpham {
+        width: 45%;
+    }
+
+    .chitiet_sanpham p,
+    .chitiet_sanpham h3 {
+        font-size: 2.5em;
+    }
+
+    .chitiet_sanpham p {
+        padding: 0;
+        margin: 0;
+    }
+
+    td {
+        font-size: 2em;
+    }
+
+    .sum-total-h3 {
+        width: 25%;
+    }
+
+    .sum-total-delall {
+        text-align: center;
+        width: 25%;
+        margin-top: 1em;
+        display: flex;
+    }
+    
+    .sum-total-detail {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .modal-cart-bottom {
+        padding: 0;
+        height: 23em;
+    }
+
+    .sum-total {
+        align-items: baseline;
+    }
+
+    .order-modal {
+        width: 100%;
+    }
+
+    .view-order-modal {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .div-content .content1 {
+        display: none;
+    }
+
+    #Header #nav li {
+        display: block;
+    }
+
+    #content .content-section .section-heading .div-content-product ul li {
+        display: block;
+    }
+}

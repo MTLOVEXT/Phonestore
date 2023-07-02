@@ -8,12 +8,14 @@
         mysqli_query($mysqli,$sql_them);
         header('Location:../../index.php?action=quanlydanhmucsp&query=them');
     }elseif(isset($_POST['btn_suadanhmuc'])) {
+        //sua
         $sql_update = "UPDATE tbl_danhmuc SET tendanhmuc = '".$tenloaisp."', thutu = '".$thutu."' WHERE id_danhmuc= '$_GET[iddanhmuc]'";
         mysqli_query($mysqli,$sql_update);
         header('Location:../../index.php?action=quanlydanhmucsp&query=them');
     }else {
+        //xoa
         $id = $_GET['iddanhmuc'];
-        $sql_xoa = "DELETE FROM tbl_danhmuc WHERE iddanhmuc = '".$id."'";
+        $sql_xoa = "DELETE FROM tbl_danhmuc WHERE id_danhmuc = '".$id."'";
         mysqli_query($mysqli,$sql_xoa);
         header('Location:../../index.php?action=quanlydanhmucsp&query=them');
     }

@@ -1,4 +1,4 @@
-<div class="content1">
+<div id="content1" class="content1">
     <ul>
         <?php
             $sql_danhmuc = "SELECT * FROM tbl_danhmuc ORDER BY id_danhmuc DESC";

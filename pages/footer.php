@@ -27,7 +27,7 @@
     </div>
 
     <div class="footer-btn">
-        <a class="btn-backToHeading" href="#main">Back to Top</a><i class="ti-angle-up"></i>
+        <a class="btn-backToHeading" href="#">Back to Top</a><i class="ti-angle-up"></i>
     </div>
             
 </div>
