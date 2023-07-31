@@ -72,7 +72,7 @@ if (isset($_POST['dangky'])) {
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </form>
     <script src="../../assets/js/Validator.js"></script>
-    <script>
+    <!-- <script>
         Validator({
             form: '#registrationForm',
             formGroupSelector: '.fmdangky__tr',
@@ -93,5 +93,5 @@ if (isset($_POST['dangky'])) {
                 console.log(data);
             }
         });
-    </script>
+    </script> -->
 </div>
